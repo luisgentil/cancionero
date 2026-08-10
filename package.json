@@ -1,0 +1,19 @@
+{
+  "name": "cancionero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "astro": "^7.2.0",
+    "chordsheetjs": "^15.6.1"
+  }
+}

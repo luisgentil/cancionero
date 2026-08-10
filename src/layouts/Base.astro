@@ -1,0 +1,19 @@
+---
+import '../styles/global.css';
+
+const { titulo } = Astro.props;
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo} · Cancionero</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Inicio</a> |
+      <a href="/canciones/">Todas las canciones</a>
+    </nav>
+    <main><slot /></main>
+  </body>
+</html>

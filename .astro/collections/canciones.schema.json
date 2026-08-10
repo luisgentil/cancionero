@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string"
+    },
+    "autor": {
+      "type": "string"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "tema": {
+      "type": "string"
+    },
+    "tono": {
+      "type": "string"
+    },
+    "letra": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "titulo",
+    "autor",
+    "letra"
+  ]
+}

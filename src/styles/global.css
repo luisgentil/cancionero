@@ -1,0 +1,20 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.4em;
+}
+
+.chord {
+  font-weight: bold;
+  color: #b5541a;
+  min-height: 1.2em;
+}
+
+.lyrics {
+  white-space: pre;
+}

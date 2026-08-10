@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const canciones = await getCollection('canciones');
+  return canciones.map(c => ({
+    params: { slug: c.id },
+    props: { cancion: c },
+  }));
+}
+
+const { cancion } = Astro.props;
+---
+<Base titulo={cancion.data.titulo}>
+  <h1>{cancion.data.titulo}</h1>
+  <p>{cancion.data.autor} {cancion.data.genero && `· ${cancion.data.genero}`}</p>
+
+  <div class="controles">
+    <button id="bajar">-1 semitono</button>
+    <span id="tono-actual">{cancion.data.tono}</span>
+    <button id="subir">+1 semitono</button>
+  </div>
+
+  <div id="cancion-render"></div>
+
+  <script type="application/json" id="letra-data" set:html={JSON.stringify(cancion.data.letra)} />
+
+  <script>
+    import { ChordProParser, HtmlDivFormatter } from 'chordsheetjs';
+
+    const letraOriginal = JSON.parse(document.getElementById('letra-data').textContent);
+
+    let semitonos = 0;
+    const parser = new ChordProParser();
+    const formatter = new HtmlDivFormatter();
+
+    function render() {
+      const song = parser.parse(letraOriginal);
+      const transportada = song.transpose(semitonos);
+      document.getElementById('cancion-render').innerHTML = formatter.format(transportada);
+    }
+
+    document.getElementById('subir').addEventListener('click', () => {
+      semitonos++;
+      render();
+    });
+
+    document.getElementById('bajar').addEventListener('click', () => {
+      semitonos--;
+      render();
+    });
+
+    render();
+  </script>
+</Base>

@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const canciones = await getCollection('canciones');
+---
+<Base titulo="Canciones">
+  <h1>Listado de canciones</h1>
+  <ul>
+    {canciones.map(c => (
+      <li>
+        <a href={`/canciones/${c.id}/`}>{c.data.titulo}</a> — {c.data.autor}
+      </li>
+    ))}
+  </ul>
+</Base>
