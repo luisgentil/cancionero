@@ -7,22 +7,8 @@ youtube: "https://youtu.be/JmgD0UhB7CE?si=yaOOFS7sWnum9Xnt"
 fecha: 2025-10-23
 descripcion: "'Gloria a Dios' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
   - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/gloria-a-dios-kairoi.html"
 ---
 [E]No sé como alab[B]arte, n[C#]i que decir, S[G#]eñor.

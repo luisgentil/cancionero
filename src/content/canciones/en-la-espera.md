@@ -1,31 +1,13 @@
 ---
 titulo: "En la espera"
+autor: "Luis Ramón"
 seccion:
   - "Ofertorio"
 youtube: "https://youtu.be/4M7NvWLLA7Y"
 fecha: 2019-05-14
 descripcion: "'En la espera' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
+  - "pan y vino"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/en-la-espera.html"
 ---
 En la e[C]spera de que v[F]engas oh Seño[C]r
@@ -50,7 +32,7 @@ En la e[C]spera de que v[F]engas oh Seño[C]r
  Y TRANSFORMALA EN TU AMOR.
 
  En la noche que aun cubre a nuestro mundo
- Preparamos esta ofrenda en oracion
+ Preparamos esta ofrenda en oración
  Con el pan y el vino entrego
  Senor todo lo que tengo
  Mi dolor, mi gozo y mi cancion.

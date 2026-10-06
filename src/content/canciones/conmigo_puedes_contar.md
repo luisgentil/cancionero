@@ -6,21 +6,8 @@ seccion:
 fecha: 2024-08-04
 descripcion: "'Conmigo puedes contar' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
   - "pascua"
-  - "cancionero"
-  - "católico"
   - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/.html"
 ---

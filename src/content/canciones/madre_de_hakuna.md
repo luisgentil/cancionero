@@ -1,6 +1,6 @@
 ---
 titulo: "Madre de Hakuna"
-autor: "Hakuna Music Group"
+autor: "Hakuna"
 seccion:
   - "María"
 youtube: "https://youtu.be/V6zrsLW2jW4?si=KxAXxzF_YaGg4OH1"

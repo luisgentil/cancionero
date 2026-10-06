@@ -1,27 +1,12 @@
 ---
 titulo: "Campana sobre campana"
-autor: "villancico"
+autor: "Villancico"
 seccion:
   - "Villancicos"
 fecha: 2019-12-12
 descripcion: "'Campana sobre campana' letra y acordes, letras de villancicos y canciones de navidad."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "tiempo ordinario"
-  - "adviento"
   - "navidad"
-  - "cancionero"
-  - "católico"
   - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/campana-sobre-campana.html"
 ---

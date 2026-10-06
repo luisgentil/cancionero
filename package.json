@@ -13,7 +13,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
     "astro": "^7.2.0",
     "chordsheetjs": "^15.6.1"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0"
   }
 }

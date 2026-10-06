@@ -1,28 +1,14 @@
 ---
-titulo: "Alabo tu bondad (Gloria)"
-autor: "Kairoi. Disco \"Y ahora Señor\", 1985"
+titulo: "Gloria -  Alabo tu bondad"
+autor: "Kairoi"
 seccion:
   - "Gloria"
 fecha: 2019-04-29
 descripcion: "'Alabo tu bondad (Gloria)' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "gloria"
+  - "Album \"Y ahora Señor\", 1985"
   - "tiempo ordinario"
   - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/gloria_alabo_tu_bondad.html"
 ---
 [C]Todo mi ser canta [G]hoy

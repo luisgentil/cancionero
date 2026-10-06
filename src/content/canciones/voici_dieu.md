@@ -1,19 +1,13 @@
 ---
 titulo: "Voici Dieu qui vient à mon secours"
-autor: "Taizé ('Laudamus Te', 2017)"
+autor: "Taizé"
 seccion:
   - "Oración"
 youtube: "https://youtu.be/pOxmTZnOR9E"
 fecha: 2019-05-21
 descripcion: "'Voici Dieu qui vient à mon secours' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
+  - "Álbum: 'Laudamus Te', 2017"
   - "canciones de misa"
   - "música religiosa"
   - "música católica"

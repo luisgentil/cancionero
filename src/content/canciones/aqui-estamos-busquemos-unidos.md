@@ -6,22 +6,7 @@ seccion:
 fecha: 2025-10-23
 descripcion: "'Aquí estamos' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
-  - "adviento"
-  - "pascua"
-  - "cancionero"
-  - "católico"
   - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/aqui-estamos-busquemos-unidos.html"
 ---

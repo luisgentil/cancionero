@@ -6,25 +6,8 @@ seccion:
 fecha: 2024-12-14
 descripcion: "'Bienaventuranzas' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
-  - "adviento"
-  - "cuaresma"
-  - "semana Santa"
   - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/.html"
 ---
 [D]Felices Somos en la pob[C]reza,

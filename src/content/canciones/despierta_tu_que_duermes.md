@@ -9,25 +9,8 @@ historia: "El canto de Taizé 'Despierta, tú que duermes' es relativamente reci
 fecha: 2019-10-02
 descripcion: "'Despierta, tú que duermes' de Taizé, con letra y acordes para guitarra, uno de los cantos de Taizé más recientes."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "comunión"
   - "oración"
-  - "tiempo ordinario"
-  - "adviento"
-  - "vigilia pascual"
-  - "pascua"
-  - "cancionero"
-  - "católico"
+  - "dos voces"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/despierta_tu_que_duermes.html"
 ---
 [A]¡Desp[D]ierta, t[A]ú que due[D]rmes! 

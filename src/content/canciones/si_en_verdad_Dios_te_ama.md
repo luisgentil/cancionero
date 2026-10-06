@@ -1,5 +1,6 @@
 ---
 titulo: "Si en verdad Dios te ama"
+autor: "Canto tradicional"
 seccion:
   - "Salida"
 youtube: "https://www.youtube.com/watch?v=b2kN17wZ4x4"

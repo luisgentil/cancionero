@@ -1,26 +1,13 @@
 ---
 titulo: "Ay del Chiquirritín"
+autor: "Villancico"
 seccion:
   - "Villancicos"
 fecha: 2019-12-19
 descripcion: "'Ay del Chiquirritín' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "adviento"
   - "navidad"
   - "villancico"
-  - "cancionero"
-  - "católico"
   - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/ay-del-chiquirritin.html"
 ---

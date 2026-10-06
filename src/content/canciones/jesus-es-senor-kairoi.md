@@ -1,6 +1,6 @@
 ---
 titulo: "Jesús es Señor"
-autor: "Kairoi - disco 'Jesús es el Señor'"
+autor: "Kairoi"
 seccion:
   - "Entrada"
   - "Festividades"
@@ -9,23 +9,10 @@ historia: "El canto 'Jesús es Señor' es el primer tema del disco 'Jesús es el
 fecha: 2019-11-22
 descripcion: "'Jesús es Señor' letra y acordes, canto de misa. Canción del grupo Kairoi, puedes cartarla como canto de entrada en la fiesta de Cristo Rey, antífona del salmo o canto de aleluya."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
+  - "Disco 'Jesús es el Señor'"
   - "tiempo ordinario"
   - "cristo rey"
   - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/jesus-es-senor-kairoi.html"
 ---
 [C]Jesús es, [F]Jesús es S[C]eño[G7]r,

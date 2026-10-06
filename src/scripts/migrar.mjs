@@ -4,12 +4,18 @@
  * para el sitio Astro.
  *
  * Uso:
- *   node scripts/migrar.mjs --input ./html-originales --index ./html-originales/cantos-de-misa.html --out ./src/content/canciones
+ *   node migrar.mjs --input ./html --index ./html/cantos-de-misa.html --out ./salida
+ *
+ * --input  carpeta con los archivos .html de canciones
+ * --index  archivo HTML índice que agrupa canciones por sección litúrgica
+ * --out    carpeta donde se escriben los .md resultantes
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
+
+// ---------- Utilidades de línea de comandos ----------
 
 function leerArgs() {
   const args = process.argv.slice(2);
@@ -22,7 +28,11 @@ function leerArgs() {
   return opts;
 }
 
-const NOTE_MAP = { do: 'C', re: 'D', mi: 'E', fa: 'F', sol: 'G', la: 'A', si: 'B' };
+// ---------- Conversión de notación de acordes ----------
+
+const NOTE_MAP = {
+  do: 'C', re: 'D', mi: 'E', fa: 'F', sol: 'G', la: 'A', si: 'B',
+};
 const NOTE_NAMES = Object.keys(NOTE_MAP).sort((a, b) => b.length - a.length);
 
 const CHORD_TOKEN_RE = new RegExp(
@@ -30,12 +40,15 @@ const CHORD_TOKEN_RE = new RegExp(
   'i'
 );
 
+// Los acordes opcionales se escriben a veces entre paréntesis: "(mim)"
+const limpiarToken = token => token.replace(/^\(+|\)+$/g, '');
+
 function esTokenAcorde(token) {
-  return CHORD_TOKEN_RE.test(token);
+  return CHORD_TOKEN_RE.test(limpiarToken(token));
 }
 
 function traducirAcorde(token) {
-  const m = token.match(CHORD_TOKEN_RE);
+  const m = limpiarToken(token).match(CHORD_TOKEN_RE);
   if (!m) return token;
   const nota = NOTE_MAP[m[1].toLowerCase()];
   const alt = m[2] || '';
@@ -44,8 +57,13 @@ function traducirAcorde(token) {
   return `${nota}${alt}${menor}${ext}`;
 }
 
+// Corrección 1: unir un acorde y su extensión cuando quedaron separados
+// por un espaciado ancho, ej. "MI     7" -> "MI7"
 function normalizarEspaciado(linea) {
-  const re = new RegExp(`\\b(${NOTE_NAMES.join('|')})(#|b)?(m)?\\s{2,}(7|9)\\b`, 'gi');
+  const re = new RegExp(
+    `\\b(${NOTE_NAMES.join('|')})(#|b)?(m)?\\s{2,}(7|9)\\b`,
+    'gi'
+  );
   return linea.replace(re, (_, nota, alt = '', menor = '', ext) => `${nota}${alt}${menor}${ext}`);
 }
 
@@ -70,17 +88,35 @@ function posicionesDeTokens(linea) {
 }
 
 function fusionarAcordesLetra(lineaAcordes, lineaLetra) {
-  const posiciones = posicionesDeTokens(lineaAcordes).sort((a, b) => b[0] - a[0]);
+  const originalLen = lineaLetra.length;
+  const posiciones = posicionesDeTokens(lineaAcordes);
+
+  // Acordes que caen dentro del texto: se insertan de derecha a izquierda
+  // para no desplazar columnas ya usadas.
+  const dentro = posiciones.filter(([col]) => col < originalLen).sort((a, b) => b[0] - a[0]);
+  // Acordes "sobrantes" más allá del final de la letra (ej. acordes de
+  // cierre tras la última palabra): se añaden juntos, en su orden original,
+  // sin tocar lo ya insertado dentro del texto.
+  const fuera = posiciones.filter(([col]) => col >= originalLen).sort((a, b) => a[0] - b[0]);
+
   let letra = lineaLetra;
-  for (const [col, token] of posiciones) {
-    const marcador = `[${traducirAcorde(token)}]`;
-    letra = col >= letra.length ? letra + marcador : letra.slice(0, col) + marcador + letra.slice(col);
+  for (const [col, token] of dentro) {
+    letra = letra.slice(0, col) + `[${traducirAcorde(token)}]` + letra.slice(col);
+  }
+  if (fuera.length) {
+    letra += ' ' + fuera.map(([, token]) => `[${traducirAcorde(token)}]`).join('');
   }
   return letra;
 }
 
+// Corrección 2 y 3: comentarios ChordPro seguros, sin llaves sueltas de {Bis: ...}
 function procesarPre(textoPre) {
-  const lineas = textoPre.replace(/\r\n/g, '\n').split('\n').map(normalizarEspaciado);
+  // Los corchetes [ ] tienen significado especial en ChordPro (marcan un
+  // acorde). Si el texto original ya traía corchetes con otro sentido
+  // (ej. "[SOL - RE - mim]" como anotación de acordes alternativos), hay
+  // que neutralizarlos ANTES de insertar los nuestros, o colisionarían.
+  const sinCorchetesOriginales = textoPre.replace(/\[/g, '(').replace(/\]/g, ')');
+  const lineas = sinCorchetesOriginales.replace(/\r\n/g, '\n').split('\n').map(normalizarEspaciado);
 
   while (lineas.length && lineas[0].trim() === '') lineas.shift();
   while (lineas.length && lineas[lineas.length - 1].trim() === '') lineas.pop();
@@ -91,6 +127,7 @@ function procesarPre(textoPre) {
     const linea = lineas[i];
     const trimmed = linea.trim();
 
+    // Marcador de repetición {Bis: ... } -> texto seguro, sin llaves ChordPro
     if (/^\{Bis:?\s*$/i.test(trimmed)) {
       salida.push('(Bis)');
       i++;
@@ -100,6 +137,7 @@ function procesarPre(textoPre) {
       i++;
       continue;
     }
+
     if (trimmed === '') {
       salida.push('');
       i++;
@@ -112,6 +150,7 @@ function procesarPre(textoPre) {
         salida.push(fusionarAcordesLetra(linea, siguiente));
         i += 2;
       } else {
+        // Acordes sueltos sin letra debajo (ej. una intro) -> comentario ChordPro real
         salida.push(`{comment: ${trimmed}}`);
         i++;
       }
@@ -123,6 +162,8 @@ function procesarPre(textoPre) {
   }
   return salida.join('\n').trim();
 }
+
+// ---------- Extracción de datos de cada página ----------
 
 function esRedireccion(html) {
   return /<meta[^>]+http-equiv=["']refresh["']/i.test(html);
@@ -156,11 +197,46 @@ function extraerHistoria($) {
   return texto;
 }
 
+const MESES = {
+  enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6, julio: 7,
+  agosto: 8, septiembre: 9, setiembre: 9, octubre: 10, noviembre: 11, diciembre: 12,
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7,
+  august: 8, september: 9, october: 10, november: 11, december: 12,
+};
+
+// Acepta "02 noviembre 2019 00:00:00 GMT+1", "Thu, 14 March 2019 ...", etc.
+function parsearFecha(texto) {
+  if (!texto) return undefined;
+  const m = texto.match(/(\d{1,2})\s+([A-Za-zÁÉÍÓÚáéíóú]+)\s+(\d{4})/);
+  if (!m) return undefined;
+  const mes = MESES[m[2].toLowerCase()];
+  if (!mes) return undefined;
+  const pad = n => String(n).padStart(2, '0');
+  return `${m[3]}-${pad(mes)}-${pad(m[1])}`;
+}
+
+function extraerMeta($) {
+  const meta = nombre => $(`meta[name="${nombre}" i]`).attr('content')?.trim() || undefined;
+
+  const keywords = meta('keywords')
+    ?.split(',')
+    .map(k => k.trim())
+    .filter(Boolean);
+
+  return {
+    descripcion: meta('description'),
+    palabrasClave: keywords && keywords.length ? [...new Set(keywords)] : undefined,
+    fecha: parsearFecha(meta('DateCreated')),
+    urlAnterior: $('link[rel="canonical"]').attr('href')?.trim() || undefined,
+  };
+}
+
 function extraerDatos(rutaArchivo) {
   const html = fs.readFileSync(rutaArchivo, 'utf-8');
   if (esRedireccion(html)) return { redireccion: true };
 
   const $ = cheerio.load(html);
+
   const titulo = $('h1').first().text().trim() || undefined;
 
   let autor;
@@ -180,11 +256,14 @@ function extraerDatos(rutaArchivo) {
     youtube: extraerYoutube($),
     pdf: extraerPdf($),
     historia: extraerHistoria($),
+    ...extraerMeta($),
   };
 }
 
+// ---------- Índice de secciones litúrgicas ----------
+
 function extraerMapaSecciones(rutaIndice) {
-  const mapa = new Map();
+  const mapa = new Map(); // filename -> Set(secciones)
   if (!rutaIndice) return mapa;
 
   const html = fs.readFileSync(rutaIndice, 'utf-8');
@@ -209,8 +288,10 @@ function extraerMapaSecciones(rutaIndice) {
   return mapa;
 }
 
+// ---------- Generación de frontmatter YAML ----------
+
 function escaparYaml(valor) {
-  return `"${String(valor).replace(/"/g, '\\"')}"`;
+  return `"${String(valor).replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
 }
 
 function generarMarkdown(datos) {
@@ -224,10 +305,19 @@ function generarMarkdown(datos) {
   if (datos.youtube) lineas.push(`youtube: ${escaparYaml(datos.youtube)}`);
   if (datos.pdf) lineas.push(`pdf: ${escaparYaml(datos.pdf)}`);
   if (datos.historia) lineas.push(`historia: ${escaparYaml(datos.historia)}`);
+  if (datos.fecha) lineas.push(`fecha: ${datos.fecha}`);
+  if (datos.descripcion) lineas.push(`descripcion: ${escaparYaml(datos.descripcion)}`);
+  if (datos.palabrasClave?.length) {
+    lineas.push('palabrasClave:');
+    for (const k of datos.palabrasClave) lineas.push(`  - ${escaparYaml(k)}`);
+  }
+  if (datos.urlAnterior) lineas.push(`urlAnterior: ${escaparYaml(datos.urlAnterior)}`);
   lineas.push('---');
   lineas.push(datos.letra || '');
   return lineas.join('\n') + '\n';
 }
+
+// ---------- Programa principal ----------
 
 function main() {
   const opts = leerArgs();
@@ -274,3 +364,5 @@ function main() {
 }
 
 main();
+
+// node scripts/migrar.mjs --input C:\Users\VORPC\Documents\Programar\cancionero\resources\canciones\migrar --index C:\Users\VORPC\Documents\Programar\cancionero\resources\pages/cantos-de-misa.html --out content/canciones

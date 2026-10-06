@@ -8,25 +8,43 @@
     "autor": {
       "type": "string"
     },
-    "genero": {
-      "type": "string"
-    },
-    "tema": {
-      "type": "string"
+    "seccion": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "tono": {
       "type": "string"
     },
-    "letra": {
+    "youtube": {
       "type": "string"
+    },
+    "pdf": {
+      "type": "string"
+    },
+    "historia": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "palabrasClave": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "urlAnterior": {
+      "type": "string",
+      "format": "uri"
     },
     "$schema": {
       "type": "string"
     }
-  },
-  "required": [
-    "titulo",
-    "autor",
-    "letra"
-  ]
+  }
 }

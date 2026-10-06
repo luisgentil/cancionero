@@ -1,5 +1,6 @@
 ---
 titulo: "María está pasando por aquí"
+autor: "Canto tradicional"
 seccion:
   - "María"
 youtube: "https://www.youtube.com/watch?v=V7xeJhuAA18"

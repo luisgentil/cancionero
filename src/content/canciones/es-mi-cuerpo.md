@@ -1,32 +1,14 @@
 ---
-titulo: "El Señor Dios nos amó - 22"
-autor: "tradicional"
+titulo: "El Señor Dios nos amó"
+autor: "Canto tradicional"
 seccion:
   - "Comunión"
 fecha: 2019-05-14
 descripcion: "'El Señor Dios nos amó' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "ofertorio"
-  - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
-  - "cancionero"
+  - "pan y vino"
   - "católico"
-  - "infantil"
+  - "eucaristía"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/es-mi-cuerpo.html"
 ---
 [C]1  El Señor Dios nos amó  

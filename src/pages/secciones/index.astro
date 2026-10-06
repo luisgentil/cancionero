@@ -5,14 +5,14 @@ import { slugify } from '../../utils/slugify';
 
 const canciones = await getCollection('canciones');
 const secciones = [...new Set(
-  canciones.map(c => c.data.seccion).filter(Boolean)
+  canciones.flatMap(c => c.data.seccion ?? [])
 )].sort();
 ---
 <Base titulo="Secciones">
   <h1>Secciones</h1>
   <ul>
-    {secciones.map(seccion => (
-      <li><a href={`/secciones/${slugify(seccion)}/`}>{seccion}</a></li>
+    {secciones.map(s => (
+      <li><a href={`/secciones/${slugify(s)}/`}>{s}</a></li>
     ))}
   </ul>
 </Base>

@@ -1,19 +1,13 @@
 ---
 titulo: "Te seguiré"
-autor: "Félix del Valle. Álbum: 'No puedo darte'"
+autor: "Félix del Valle"
 seccion:
   - "Salida"
 youtube: "https://www.youtube.com/watch?v=JGOdkh6wI-o"
 fecha: 2019-05-05
 descripcion: "'Te seguiré' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
+  - "Álbum: 'No puedo darte'"
   - "canciones de misa"
   - "música religiosa"
   - "música católica"

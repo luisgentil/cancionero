@@ -1,5 +1,6 @@
 ---
 titulo: "Padrenuestro (Simon / Beatles)"
+autor: "Canto tradicional"
 seccion:
   - "Padrenuestro"
 youtube: "https://www.youtube.com/watch?v=7ANfuR0gCqw"

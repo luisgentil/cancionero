@@ -1,6 +1,6 @@
 ---
 titulo: "Adeste fideles"
-autor: "John Francis Wade - tradicional"
+autor: "Villancico"
 seccion:
   - "Villancicos"
 pdf: "https://drive.google.com/open?id=1vH31KfOM0wc2rSq76mbSET_-HtJw9Gbu"
@@ -8,21 +8,7 @@ historia: "Adeste fideles es un canto muy conocido y usado en las parroquias; un
 fecha: 2019-10-03
 descripcion: "🎄 'Adeste fideles' letra y acordes para guitarra, villancico en latín y en español. ✨"
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "navidad"
-  - "cancionero"
-  - "católico"
-  - "infantil"
   - "villancicos"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/adeste-fideles-letra-y-acordes.html"
 ---

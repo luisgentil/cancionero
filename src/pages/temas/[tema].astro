@@ -5,15 +5,13 @@ import { slugify } from '../../utils/slugify';
 
 export async function getStaticPaths() {
   const canciones = await getCollection('canciones');
-  const temas = [...new Set(
-    canciones.map(c => c.data.tema).filter(Boolean)
-  )];
+  const temas = [...new Set(canciones.flatMap(c => c.data.palabrasClave ?? []))];
 
   return temas.map(tema => ({
     params: { tema: slugify(tema) },
     props: {
       nombreTema: tema,
-      canciones: canciones.filter(c => c.data.tema === tema),
+      canciones: canciones.filter(c => (c.data.palabrasClave ?? []).includes(tema)),
     },
   }));
 }
@@ -22,9 +20,9 @@ const { nombreTema, canciones } = Astro.props;
 ---
 <Base titulo={nombreTema}>
   <h1>Tema: {nombreTema}</h1>
-  <ul>
+  <ol>
     {canciones.map(c => (
       <li><a href={`/canciones/${c.id}/`}>{c.data.titulo}</a> — {c.data.autor}</li>
     ))}
-  </ul>
+  </ol>
 </Base>

@@ -1,5 +1,6 @@
 ---
 titulo: "Santo (del aire)"
+autor: "Canto tradicional"
 seccion:
   - "Santo"
 youtube: "https://youtu.be/--uj8vU5B4s?si=xFuCsAMZpReSTjqS"

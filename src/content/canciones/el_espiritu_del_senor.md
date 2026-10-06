@@ -1,28 +1,16 @@
 ---
 titulo: "El Espíritu del Señor"
-autor: "Kairoi ('A tu lado, Señor', 1987)"
+autor: "Kairoi"
 seccion:
   - "Comunión"
 youtube: "https://youtu.be/V7wqVTEm_uk"
 fecha: 2019-05-20
 descripcion: "'El Espíritu del Señor' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
+  - "Álbum: 'A tu lado, Señor', 1987"
   - "comunión"
   - "pentescostés"
   - "pascua"
-  - "cancionero"
-  - "católico"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/el_espiritu_del_senor.html"
 ---
 [Bm]EL SEÑOR OS DA[A]RÁ SU ES[Bm]PÍRIT[D]U SANTO,

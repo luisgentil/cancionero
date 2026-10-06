@@ -1,30 +1,12 @@
 ---
 titulo: "Alegría, alegría, alegría"
-autor: "villancico"
+autor: "Villancico"
 seccion:
   - "Villancicos"
 fecha: 2019-05-14
 descripcion: "'Alegría, alegría, alegría' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "tiempo ordinario"
-  - "adviento"
   - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
-  - "cancionero"
-  - "católico"
   - "infantil"
 ---
 [A]Esta noche nace el Niño 

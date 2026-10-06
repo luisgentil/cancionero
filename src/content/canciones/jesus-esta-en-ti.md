@@ -9,21 +9,8 @@ historia: "La primera vez que oí esta canción fue en la parroquia de El Espír
 fecha: 2019-11-07
 descripcion: "'Jesús está en ti' letra y acordes, letras de canciones de misa, indicadas para niños."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
   - "canción con gestos"
-  - "cancionero"
-  - "católico"
   - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/jesus-esta-en-ti.html"
 ---

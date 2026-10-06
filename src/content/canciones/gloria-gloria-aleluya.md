@@ -1,30 +1,12 @@
 ---
 titulo: "Gloria, gloria, aleluya"
-autor: "popular"
+autor: "Canto tradicional"
 seccion:
   - "Gloria"
 fecha: 2019-09-11
 descripcion: "'Gloria, gloria, aleluya' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
-  - "cancionero"
-  - "católico"
   - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/gloria-gloria-aleluya.html"
 ---

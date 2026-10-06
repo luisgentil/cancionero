@@ -1,30 +1,16 @@
 ---
 titulo: "Gloria"
-autor: "F. Palazón"
+autor: "Francisco Palazón"
 seccion:
   - "Gloria"
 youtube: "https://youtu.be/sAOKQm89xn4"
 fecha: 2019-11-02
 descripcion: "'Gloria' (alrededor de tu mesa) letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "gloria"
   - "tiempo ordinario"
   - "navidad"
   - "vigilia pascual"
   - "pascua"
-  - "cancionero"
-  - "católico"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/gloria_alrededor.html"
 ---
 [E7]Gloria a D[A]ios en el C[C#m]ielo,

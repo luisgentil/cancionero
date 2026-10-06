@@ -1,6 +1,6 @@
 ---
 titulo: "La virgen sueña caminos"
-autor: "Carmelo Erdorzain. Disco: 'Preparad los caminos'(1979)"
+autor: "Carmelo Erdorzain"
 seccion:
   - "Entrada"
   - "María"
@@ -9,13 +9,7 @@ historia: "Este canto pertenece al disco \"Preparad los caminos\", editado en 19
 fecha: 2019-05-14
 descripcion: "'La virgen sueña caminos' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
+  - "Album 'Preparad los caminos'(1979)"
   - "canciones de misa"
   - "música religiosa"
   - "música católica"

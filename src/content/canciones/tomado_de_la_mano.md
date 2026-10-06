@@ -1,6 +1,6 @@
 ---
 titulo: "Tomado de la mano"
-autor: "Martín Verde Barajas, F. Palazón"
+autor: "Manuel Bonilla"
 seccion:
   - "Comunión"
 youtube: "https://www.youtube.com/watch?v=Qf_GVrzBHX0"

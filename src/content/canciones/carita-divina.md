@@ -7,21 +7,7 @@ youtube: "https://youtu.be/iAF6o-8dMpc"
 fecha: 2019-12-12
 descripcion: "'Carita divina' letra y acordes, vilancicos y letras de canciones de misa para Navidad."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "navidad"
-  - "cancionero"
-  - "católico"
-  - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/carita-divina.html"
 ---
 [E]Envidia tiene la [F]fuente del color

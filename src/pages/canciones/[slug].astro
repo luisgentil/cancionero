@@ -11,25 +11,49 @@ export async function getStaticPaths() {
 }
 
 const { cancion } = Astro.props;
+const letraOriginal = cancion.body.trim();
+const datos = { letra: letraOriginal, tono: cancion.data.tono ?? '' };
 ---
-<Base titulo={cancion.data.titulo}>
-  <h1>{cancion.data.titulo}</h1>
+<Base titulo={cancion.data.titulo} descripcion={cancion.data.descripcion}>
+    <h1>{cancion.data.titulo}</h1>
   <p>{cancion.data.autor} {cancion.data.genero && `· ${cancion.data.genero}`}</p>
 
   <div class="controles">
-    <button id="bajar">-1 semitono</button>
+    <button id="bajar">-1 semitono · </button>
     <span id="tono-actual">{cancion.data.tono}</span>
-    <button id="subir">+1 semitono</button>
+    <button id="subir"> · +1 semitono</button>
   </div>
 
   <div id="cancion-render"></div>
 
-  <script type="application/json" id="letra-data" set:html={JSON.stringify(cancion.data.letra)} />
+  <script type="application/json" id="cancion-data" set:html={JSON.stringify(datos)} />
 
   <script>
     import { ChordProParser, HtmlDivFormatter } from 'chordsheetjs';
 
-    const letraOriginal = JSON.parse(document.getElementById('letra-data').textContent);
+    const { letra: letraOriginal, tono: tonoOriginal } = JSON.parse(
+      document.getElementById('cancion-data').textContent
+    );
+
+    const NOTES_SHARP = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+    const NOTES_FLAT  = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+
+    function transponerTono(tono, semitonos) {
+      if (!tono) return '';
+      const match = tono.match(/^([A-G])(#|b)?(.*)$/);
+      if (!match) return tono;
+      const [, letra, alteracion, sufijo] = match;
+      const raiz = letra + (alteracion || '');
+      const usarBemoles = alteracion === 'b';
+      const escala = usarBemoles ? NOTES_FLAT : NOTES_SHARP;
+
+      let indice = escala.indexOf(raiz);
+      if (indice === -1) indice = NOTES_SHARP.indexOf(raiz);
+      if (indice === -1) return tono;
+
+      const nuevoIndice = ((indice + semitonos) % 12 + 12) % 12;
+      return escala[nuevoIndice] + sufijo;
+    }
 
     let semitonos = 0;
     const parser = new ChordProParser();
@@ -39,6 +63,7 @@ const { cancion } = Astro.props;
       const song = parser.parse(letraOriginal);
       const transportada = song.transpose(semitonos);
       document.getElementById('cancion-render').innerHTML = formatter.format(transportada);
+      document.getElementById('tono-actual').textContent = transponerTono(tonoOriginal, semitonos);
     }
 
     document.getElementById('subir').addEventListener('click', () => {

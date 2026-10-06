@@ -1,5 +1,6 @@
 ---
 titulo: "Mirad al árbol de la Cruz"
+autor: "Canto tradicional"
 seccion:
   - "Procesión"
 fecha: 2019-04-04

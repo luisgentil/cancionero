@@ -1,6 +1,6 @@
 ---
 titulo: "Saber que vendrás"
-autor: "-autor-"
+autor: "Ricardo Cantalapiedra"
 seccion:
   - "Ofertorio"
 youtube: "https://youtu.be/P11l3L8DTn4"

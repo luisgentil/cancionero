@@ -1,30 +1,12 @@
 ---
 titulo: "Dime niño de quién eres"
-autor: "villancico tradicional"
+autor: "Villancico"
 seccion:
   - "Villancicos"
 fecha: 2019-05-14
 descripcion: "'Dime niño de quién eres' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "tiempo ordinario"
-  - "adviento"
   - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
-  - "cancionero"
-  - "católico"
   - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/dime-nino-de-quien-eres-villancico.html"
 ---

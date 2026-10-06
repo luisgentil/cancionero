@@ -1,19 +1,13 @@
 ---
 titulo: "Ven Espíritu de Dios"
-autor: "Kairoi. Disco: 'Y ahora, Señor'"
+autor: "Kairoi"
 seccion:
   - "Acción de gracias"
 youtube: "https://youtu.be/6tcj1x3Ajbg"
 fecha: 2019-05-04
 descripcion: "'Ven Espíritu de Dios sobre mi' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
+  - "Disco: 'Y ahora, Señor'"
   - "canciones de misa"
   - "música religiosa"
   - "música católica"

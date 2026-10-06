@@ -7,22 +7,8 @@ youtube: "https://youtu.be/XOkcA9zx5jw?si=CsP7eV-W4lV9Jg-s"
 fecha: 2024-08-19
 descripcion: "'Jesús está entre nosotros' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
   - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/jesus_esta_entre_nosotros.html"
 ---
 [G]JESÚS E[D]STÁ E[C]NTRE NO[G]SOTR[D]OS,

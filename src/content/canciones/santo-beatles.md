@@ -1,5 +1,6 @@
 ---
 titulo: "Santo (Beatles)"
+autor: "Canto tradicional"
 seccion:
   - "Santo"
 fecha: 2019-10-28

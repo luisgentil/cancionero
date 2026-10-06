@@ -1,29 +1,17 @@
 ---
 titulo: "Espíritu de Dios"
+autor: "Roberto Orellana"
 seccion:
   - "Acción de gracias"
 fecha: 2019-05-06
 descripcion: "'Espíritu de Dios' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
+  - "confirmación"
   - "antífona"
   - "acción de gracias"
   - "salmo"
   - "pentecostés"
-  - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
+  - "espíritu santo"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/espiritu_de_dios_venezolano.html"
 ---
 [A]Espíritu de[D] Dios,  llena [C]mi vida,

@@ -5,15 +5,13 @@ import { slugify } from '../../utils/slugify';
 
 export async function getStaticPaths() {
   const canciones = await getCollection('canciones');
-  const secciones = [...new Set(
-    canciones.map(c => c.data.seccion).filter(Boolean)
-  )];
+  const secciones = [...new Set(canciones.flatMap(c => c.data.seccion ?? []))];
 
   return secciones.map(seccion => ({
     params: { seccion: slugify(seccion) },
     props: {
       nombreSeccion: seccion,
-      canciones: canciones.filter(c => c.data.seccion === seccion),
+      canciones: canciones.filter(c => (c.data.seccion ?? []).includes(seccion)),
     },
   }));
 }

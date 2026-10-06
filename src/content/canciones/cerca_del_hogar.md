@@ -7,26 +7,9 @@ youtube: "https://www.youtube.com/watch?v=Fr8u-vCj9JY"
 fecha: 2023-11-03
 descripcion: "'Cerca del hogar' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
+  - "confianza"
+  
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/cerca_del_hogar.html"
 ---
 [D]Cerca [G]del hogar, que cal[D]ienta mi a[G]lma

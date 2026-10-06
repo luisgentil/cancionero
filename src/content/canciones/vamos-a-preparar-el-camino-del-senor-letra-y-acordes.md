@@ -1,6 +1,6 @@
 ---
 titulo: "Vamos a preparar el camino del Señor"
-autor: "C. Erdozain.-A.Medina"
+autor: "Carmelo Erdozáin"
 seccion:
   - "Entrada"
 youtube: "https://www.youtube.com/watch?v=_Z3wC4iqRZE"

@@ -8,24 +8,10 @@ historia: "La canción que nos ocupa en esta ocasión proviene de Taizé, una co
 fecha: 2019-03-20
 descripcion: "'Aleluya de Taizé' letra y acordes para guitarra ✅ . Canto de antífona - antes del evangelio. letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "aleluya"
   - "tiempo ordinario"
-  - "adviento"
   - "navidad"
   - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/aleluya_taize.html"
 ---
 [C]Aleluya,[Em] alelu – a[F]leluy[C]a

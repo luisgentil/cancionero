@@ -1,5 +1,6 @@
 ---
 titulo: "Santo de Haendel"
+autor: "Alfonso Luna"
 seccion:
   - "Santo"
 youtube: "https://youtu.be/yjlZ0a8WZAY"

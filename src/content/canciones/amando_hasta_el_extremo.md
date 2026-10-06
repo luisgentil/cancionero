@@ -4,6 +4,13 @@ autor: "Maite López"
 seccion:
   - "Comunión"
 youtube: "https://youtu.be/_f8G4_-D0No?si=C3jZ1pcbTJPT3wf-"
+fecha: 2024-03-28
+descripcion: "'Amando hasta el extremo' letra y acordes, letras de canciones de misa."
+palabrasClave:
+  - "semana Santa"
+  - "jeuves santo"
+  - "viernes santo"
+urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/.html"
 ---
 [Am]Déjame, S[C]eñor, 
 mirarte bien po[Am]r dentro,

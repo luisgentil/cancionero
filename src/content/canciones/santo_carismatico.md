@@ -1,5 +1,6 @@
 ---
 titulo: "Santo (carismático)"
+autor: "Canto tradicional"
 seccion:
   - "Santo"
 fecha: 2019-03-22

@@ -1,5 +1,6 @@
 ---
 titulo: "Qué alegría cuando me dijeron"
+autor: "Miguel Manzano"
 seccion:
   - "Antífonas - Salmos"
 youtube: "https://www.youtube.com/watch?v=t-4xnIQt7pc"

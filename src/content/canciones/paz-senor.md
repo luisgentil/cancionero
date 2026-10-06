@@ -1,5 +1,6 @@
 ---
 titulo: "Paz, Señor"
+autor: "Miguel Manzano"
 seccion:
   - "Paz"
 fecha: 2023-12-10

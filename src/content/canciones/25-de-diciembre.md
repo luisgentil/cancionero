@@ -7,20 +7,7 @@ youtube: "https://youtu.be/xJUZfP4Fs4I"
 fecha: 2019-12-12
 descripcion: "'25 de diciembre' letra y acordes, letras de villancicos para las misas de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "navidad"
-  - "cancionero"
-  - "católico"
   - "infantil"
 ---
 [Am]Veinticinco [E]de Diciembre,

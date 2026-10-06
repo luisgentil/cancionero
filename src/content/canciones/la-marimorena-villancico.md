@@ -1,5 +1,6 @@
 ---
 titulo: "La marimorena"
+autor: "Villancico"
 seccion:
   - "Villancicos"
 youtube: "https://youtu.be/6fDFYHgbpAw"

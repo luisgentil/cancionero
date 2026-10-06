@@ -7,26 +7,8 @@ youtube: "https://www.youtube.com/live/v1sA85lBKKE?si=6NXEhJGT3_phLbet&t=3198"
 fecha: 2025-11-23
 descripcion: "'Cordero de Dios' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
+
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/.html"
 ---
 [A]Cordero de Dios que [E]quitas el pe[D]cado del [A]mundo,

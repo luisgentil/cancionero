@@ -1,5 +1,6 @@
 ---
 titulo: "Victoria, tú reinarás"
+autor: "Eduardo Malvido"
 seccion:
   - "Comunión"
 youtube: "https://youtu.be/i-hRAiFJU5M"

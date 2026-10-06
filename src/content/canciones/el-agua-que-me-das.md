@@ -1,30 +1,13 @@
 ---
 titulo: "El agua que me das"
+autor: "Canto tradicional"
 seccion:
   - "Comunión"
 fecha: 2026-01-17
 descripcion: "'El agua que me das' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
   - "semana Santa"
-  - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
+  - "perdón"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/.html"
 ---
 [D]EL AGUA QUE ME[G] DAS

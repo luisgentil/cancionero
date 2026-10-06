@@ -1,5 +1,6 @@
 ---
 titulo: "Hoy comienza una nueva era"
+autor: "Canto tradicional"
 seccion:
   - "Entrada"
 youtube: "https://youtu.be/vjQg92e8drA"

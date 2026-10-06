@@ -5,14 +5,14 @@ import { slugify } from '../../utils/slugify';
 
 const canciones = await getCollection('canciones');
 const temas = [...new Set(
-  canciones.map(c => c.data.tema).filter(Boolean)
+  canciones.flatMap(c => c.data.palabrasClave ?? [])
 )].sort();
 ---
 <Base titulo="Temas">
   <h1>Temas</h1>
-  <ul>
+  <ol>
     {temas.map(tema => (
       <li><a href={`/temas/${slugify(tema)}/`}>{tema}</a></li>
     ))}
-  </ul>
+  </ol>
 </Base>

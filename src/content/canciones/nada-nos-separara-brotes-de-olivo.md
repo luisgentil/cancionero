@@ -1,6 +1,6 @@
 ---
 titulo: "Nada nos separará"
-autor: "Brotes de Olivo. Disco: 'Dame Vida' (1990)"
+autor: "Brotes de Olivo"
 seccion:
   - "Acción de gracias"
   - "Oración"
@@ -9,13 +9,7 @@ fecha: 2019-09-14
 descripcion: "'Nada nos separará' letra y acordes, letras de canciones de Brotes de Olivo."
 palabrasClave:
   - "Brotes de Olivo"
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
+  - "Disco: 'Dame Vida' (1990)"
   - "canciones de misa"
   - "música religiosa"
   - "música católica"

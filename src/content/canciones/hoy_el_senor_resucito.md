@@ -1,5 +1,6 @@
 ---
 titulo: "Hoy el Señor resucitó"
+autor: "Miguel Manzano"
 seccion:
   - "Salida"
   - "Procesión"

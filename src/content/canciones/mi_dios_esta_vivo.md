@@ -7,22 +7,9 @@ seccion:
 fecha: 2019-04-26
 descripcion: "'Mi Dios está vivo' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
   - "perdón"
   - "tiempo ordinario"
   - "pascua"
-  - "cancionero"
-  - "católico"
   - "infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/mi_dios_esta_vivo.html"
 ---

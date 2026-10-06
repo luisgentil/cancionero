@@ -3,6 +3,13 @@ titulo: "Dijiste sí"
 autor: "Luis Poveda"
 seccion:
   - "María"
+fecha: 2025-10-24
+descripcion: "'Dijiste sí' letra y acordes, letras de canciones de misa."
+palabrasClave:
+  - "tiempo ordinario"
+  - "infantil"
+  - "maría"
+urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/dijiste-si.html"
 ---
 Intro:
 {comment: RE  SOL  RE  LA}

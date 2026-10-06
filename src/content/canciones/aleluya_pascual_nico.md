@@ -6,26 +6,8 @@ seccion:
 fecha: 2025-10-11
 descripcion: "'Aleluya Pascual' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
-  - "semana Santa"
   - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
+
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/aleluya_cantara.html"
 ---
 [D]Aleluya[A], alelu[Bm]ya,

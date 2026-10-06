@@ -1,5 +1,6 @@
 ---
 titulo: "Padrenuestro gallego - en el mar he oido hoy"
+autor: "Canto tradicional"
 seccion:
   - "Padrenuestro"
 youtube: "https://youtu.be/ohs3c9t1xB4"

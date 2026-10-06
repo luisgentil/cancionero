@@ -1,5 +1,6 @@
 ---
 titulo: "Santo africano - zaireño"
+autor: "Canto tradicional"
 seccion:
   - "Santo"
 youtube: "https://youtu.be/EDzdOghpAsQ?si=SBLbF-aodTBCMC_h"

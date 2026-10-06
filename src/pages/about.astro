@@ -1,4 +1,6 @@
 ---
+import Base from '../layouts/Base.astro';
+
 const pageTitle = "Sobre mi";
 
 const identity = {
@@ -7,48 +9,53 @@ const identity = {
   occupation: "Escritor técnico",
   hobbies: ["fotografia", "observación de aves", "peñarol"],
 };
-  const happy = true;
+const happy = true;
 const finished = false;
 const goal = 3;
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Redacción de documentos"];
----
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
-    <style>
-      h1 {
-        color: purple;
-        font-size: 3rem;
-      }
-    </style>
-  </head>
 
-  <body>
-    <a href="/">Inicio </a>
-    <a href="/about/"> Sobre mí </a>
-    <a href="/blog/"> Blog </a>
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Astro",
+  "Redacción de documentos",
+];
+
+const skillColor = "crimson";
+const fontWeight = "bold";
+const textCase = "uppercase";
+---
+<Base titulo="sobre mi">
 
     <h1>{pageTitle}</h1>
-<p>He aquí algunos datos sobre mí:</p>
-<ul>
-  <li>Me llamo {identity.firstName}.</li>
-  <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
-  {identity.hobbies.length >= 2 &&
-    <li>Dos de mis aficiones son: {identity.hobbies[0]} y {identity.hobbies[1]}</li>
-  }
-</ul>
-<p>Mis habilidades son:</p>
-<ul>
-  {skills.map((skill) => <li>{skill}</li>)}
-</ul>
+    <p>He aquí algunos datos sobre mí:</p>
+    <ul>
+      <li>Me llamo {identity.firstName}.</li>
+      <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
+      {
+        identity.hobbies.length >= 2 && (
+          <li>
+            Dos de mis aficiones son: {identity.hobbies[0]} y{" "}
+            {identity.hobbies[1]}
+          </li>
+        )
+      }
+    </ul>
+    <p>Mis habilidades son:</p>
+    <ul>
+      {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
 
-{happy && <p>¡Estoy feliz de aprender Astro!</p>}
+    {happy && <p>¡Estoy feliz de aprender Astro!</p>}
 
-{finished && <p>¡He terminado este tutorial!</p>}
+    {finished && <p>¡He terminado este tutorial!</p>}
 
-{goal === 3 ? <p>Mi objetivo es terminar en 3 días.</p> : <p>Mi objetivo no son 3 días.</p>}
-
-  </body>
-</html>
+    {
+      goal === 3 ? (
+        <p>Mi objetivo es terminar en 3 días.</p>
+      ) : (
+        <p>Mi objetivo no son 3 días.</p>
+      )
+    }
+</Base>

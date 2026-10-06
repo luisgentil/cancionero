@@ -1,5 +1,6 @@
 ---
 titulo: "Regina Coeli"
+autor: "Canto tradicional"
 seccion:
   - "María"
 youtube: "https://youtu.be/6-EJiI_yAas"

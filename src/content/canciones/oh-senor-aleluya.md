@@ -1,5 +1,6 @@
 ---
 titulo: "Oh Señor, Aleluya"
+autor: "Canto tradicional"
 seccion:
   - "Aleluya"
 fecha: 2023-04-16
