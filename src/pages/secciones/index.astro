@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../../utils/slugify';
+
+const canciones = await getCollection('canciones');
+const secciones = [...new Set(
+  canciones.map(c => c.data.seccion).filter(Boolean)
+)].sort();
+---
+<Base titulo="Secciones">
+  <h1>Secciones</h1>
+  <ul>
+    {secciones.map(seccion => (
+      <li><a href={`/secciones/${slugify(seccion)}/`}>{seccion}</a></li>
+    ))}
+  </ul>
+</Base>

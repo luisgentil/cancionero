@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const canciones = await getCollection('canciones');
+const indice = canciones.map(c => ({
+  id: c.id,
+  titulo: c.data.titulo,
+  autor: c.data.autor,
+}));
+---
+<Base titulo="Buscar">
+  <h1>Buscar canciones</h1>
+
+  <input
+    type="search"
+    id="buscador"
+    placeholder="Título o autor..."
+    autocomplete="off"
+  />
+
+  <p id="contador"></p>
+  <ul id="resultados"></ul>
+
+  <script type="application/json" id="indice-canciones" set:html={JSON.stringify(indice)} />
+
+  <script>
+    const indice = JSON.parse(document.getElementById('indice-canciones').textContent);
+    const input = document.getElementById('buscador');
+    const lista = document.getElementById('resultados');
+    const contador = document.getElementById('contador');
+
+    function normalizar(texto) {
+      return texto
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase();
+    }
+
+    function render(query) {
+      const q = normalizar(query.trim());
+
+      const resultados = q === ''
+        ? []
+        : indice.filter(c =>
+            normalizar(c.titulo).includes(q) || normalizar(c.autor).includes(q)
+          );
+
+      lista.innerHTML = resultados
+        .map(c => `<li><a href="/canciones/${c.id}/">${c.titulo}</a> — ${c.autor}</li>`)
+        .join('');
+
+      contador.textContent = q === ''
+        ? ''
+        : `${resultados.length} resultado${resultados.length === 1 ? '' : 's'}`;
+    }
+
+    input.addEventListener('input', () => render(input.value));
+  </script>
+</Base>

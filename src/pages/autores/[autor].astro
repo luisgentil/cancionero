@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../../utils/slugify';
+
+export async function getStaticPaths() {
+  const canciones = await getCollection('canciones');
+  const autores = [...new Set(canciones.map(c => c.data.autor))];
+
+  return autores.map(autor => ({
+    params: { autor: slugify(autor) },
+    props: {
+      nombreAutor: autor,
+      canciones: canciones.filter(c => c.data.autor === autor),
+    },
+  }));
+}
+
+const { nombreAutor, canciones } = Astro.props;
+---
+<Base titulo={nombreAutor}>
+  <h1>{nombreAutor}</h1>
+  <ul>
+    {canciones.map(c => (
+      <li><a href={`/canciones/${c.id}/`}>{c.data.titulo}</a></li>
+    ))}
+  </ul>
+</Base>

@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../../utils/slugify';
+
+const canciones = await getCollection('canciones');
+const autores = [...new Set(canciones.map(c => c.data.autor))].sort();
+---
+<Base titulo="Autores">
+  <h1>Autores</h1>
+  <ul>
+    {autores.map(autor => (
+      <li><a href={`/autores/${slugify(autor)}/`}>{autor}</a></li>
+    ))}
+  </ul>
+</Base>
