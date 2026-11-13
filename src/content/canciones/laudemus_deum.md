@@ -7,9 +7,9 @@ youtube: "https://youtu.be/qbc23nixWSU"
 fecha: 2019-03-27
 descripcion: "'Laudemus Deum' letra y acordes, lyrics tabs chords"
 palabrasClave:
-  - "salmo"
-  - "alabanza"
-  - "oración"
+  - "Salmo"
+  - "Alabanza"
+  - "Oración"
   - "Taizé"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/laudemus_deum.html"
 ---

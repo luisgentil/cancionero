@@ -7,9 +7,8 @@ youtube: "https://www.youtube.com/watch?v=ZCz2VDEtvCA"
 fecha: 2022-05-04
 descripcion: "'La misa es una fiesta muy alegre' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "tiempo ordinario"
-  - "pascua"
-  - "infantil"
+  - "Primera Comunión"
+  - "Infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/.html"
 ---
 L[D]A MISA ES UNA[G] FIESTA MUY AL[D]EGRE, 

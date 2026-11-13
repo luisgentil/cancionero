@@ -15,6 +15,7 @@ const canciones = defineCollection({
     descripcion: z.string().optional(),
     palabrasClave: z.array(z.string()).optional(),
     urlAnterior: z.string().url().optional(),
+    numeroPapel: z.string().optional(),
   }),
 });
 

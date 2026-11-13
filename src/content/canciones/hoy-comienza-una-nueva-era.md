@@ -8,24 +8,10 @@ historia: "Esta canción es muy adecuada para el Adviento, al comienzo del año 
 fecha: 2019-10-21
 descripcion: "'Hoy comienza una nueva era' letra y acordes, canto de entrada para adviento, cuaresma o pascua."
 palabrasClave:
-  - "hoy comienza una nueva era"
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "cuaresma"
-  - "adviento"
-  - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
-  - "entrada"
+  - "Cuaresma"
+  - "Adviento"
+  - "Infantil"
+  - "Dos voces"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/hoy-comienza-una-nueva-era.html"
 ---
 [Dm]Hoy comi[F]enza una [C]nueva e[Dm]ra,

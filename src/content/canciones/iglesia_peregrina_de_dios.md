@@ -8,10 +8,10 @@ youtube: "https://youtu.be/tFFKkSkX6MU?si=RPoBqS7iKF9Cx90q"
 fecha: 2024-08-19
 descripcion: "'Iglesia peregrina de Dios' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "tiempo ordinario"
-  - "adviento"
-  - "cuaresma"
-  - "pascua"
+  - "Adviento"
+  - "Cuaresma"
+  - "Pascua"
+  - "Iglesia"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/iglesia _peregrina_de_dios.html"
 ---
 [D]Todos un[B]idos for[E7]mando un solo [A]cuerpo

@@ -7,12 +7,8 @@ youtube: "https://youtu.be/IwTkXYOyVho"
 fecha: 2019-03-14
 descripcion: "'Madre 'Junto a ti María'' letra y acordes, lyrics tabs chords"
 palabrasClave:
-  - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
+  - "Tiempo Ordinario"
+  - "Iglesia"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/junto_a_ti_maria.html"
 ---
 [C]Junto a ti Mar[G]ía

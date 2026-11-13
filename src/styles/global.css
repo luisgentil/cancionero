@@ -1,24 +1,49 @@
-
-html {
-  background-color: #f1f5f9;
-  font-family: sans-serif;
-}
-
-body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
-  line-height: 1.5;
+:root {
+  /* Si prefieres el cian claro de la captura original: #5bc8e8
+     (con texto blanco el contraste es bajo, 1,9:1) */
+  --azul-header: #1e90b8;
+  --azul-acorde: #1d6fd1;
+  --azul-enlace: #00539F;
+  --gris-texto: #444;
+  --gris-divisor: #d9d9d9;
+  --negro-footer: #111;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  background-color: #f1f5f9;
+  font-family: sans-serif;
+}
+
+/* El body ya no limita el ancho: así header y footer ocupan toda la pantalla.
+   El ancho de lectura se limita solo en <main>. */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+main {
+  width: 100%;
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 h1 {
-  margin: 1rem 0;
+  margin: 1rem 0 0.2rem;
   font-size: 2.5rem;
+}
+
+/* Autor/subtítulo bajo el h1 (h4 "Autor: ...") */
+h4 {
+  color: var(--gris-texto);
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 .row {
@@ -31,9 +56,11 @@ h1 {
   flex-direction: column;
 }
 
+/* Acordes: misma fuente que la letra, solo cambia color y peso */
 .chord {
+  font-family: inherit;
   font-weight: bold;
-  color: #b5541a;
+  color: var(--azul-acorde);
   height: 1.2em;
   line-height: 1.2em;
 }
@@ -43,15 +70,37 @@ h1 {
 }
 
 
-/* estilos de la barra de navegación*/
+/* ===== Cabecera (header + nav) ===== */
 
+header {
+  width: 100%;
+  background-color: var(--azul-header);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.6rem 1rem;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+/* Botón hamburguesa (☰): transparente, icono blanco */
 .menu {
-  background-color: #0d0950;
+  background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 5px 10px;
+  font-size: 1.8rem;
+  line-height: 1;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -68,25 +117,25 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #0d0950;
+  color: #fff;
 }
 
 .nav-links a:hover,
-.nav-links a:focus {
-  background-color: #ff9776;
+.nav-links a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.18);
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links {
   display: unset;
-} 
+}
 
 @media screen and (min-width: 900px) {
   .nav-links {
-    margin-left: 1.5em;
     display: flex;
     flex-wrap: nowrap;
     position: static;
     width: auto;
+    margin: 0;
     background: none;
   }
 
@@ -101,26 +150,72 @@ h1 {
   }
 }
 
-  
-  a {
-    color: #00539F;
-  }
 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* ===== Enlaces, secciones secundarias y divisores ===== */
 
-  .tag {
-    margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: .5em;
-    padding: .5em 1em;
-    font-size: 1.15em;
-    background-color: #F8FCFD;
-  }
+a {
+  color: var(--azul-enlace);
+}
 
-  /* --- Estilos responsive generales --- */
+main h2,
+main h3 {
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+main h3 {
+  font-size: 1.1rem;
+}
+
+main p {
+  color: var(--gris-texto);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--gris-divisor);
+  margin: 1.2rem 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  margin: 0.25em;
+  border: dotted 1px #a1a1a1;
+  border-radius: .5em;
+  padding: .5em 1em;
+  font-size: 1.15em;
+  background-color: #F8FCFD;
+}
+
+
+/* ===== Pie de página (franja oscura a todo el ancho) ===== */
+
+footer {
+  width: 100%;
+  background-color: var(--negro-footer);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.6rem 1rem;
+}
+
+footer .tag {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0;
+}
+
+
+/* ===== Resto (sin cambios de estructura) ===== */
 
 img {
   max-width: 100%;
@@ -154,16 +249,16 @@ ul li a {
 .controles button {
   padding: 0.6rem 1rem;
   font-size: 1rem;
-  border: 1px solid #0d0950;
+  border: 1px solid var(--azul-acorde);
   background-color: #fff;
-  color: #0d0950;
+  color: var(--azul-acorde);
   border-radius: 0.4em;
   cursor: pointer;
 }
 
 .controles button:hover,
 .controles button:active {
-  background-color: #0d0950;
+  background-color: var(--azul-acorde);
   color: #fff;
 }
 
@@ -179,8 +274,6 @@ ul li a {
   font-size: 1.1rem;
 }
 
-/* Pantallas pequeñas: reducir un poco el tamaño de texto de acordes/letra
-   para que quepan más columnas antes de partir línea */
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
@@ -189,18 +282,23 @@ ul li a {
   #cancion-render {
     font-size: 0.95rem;
   }
-
-
 }
+
+/* Escritorio: letra y acordes más grandes para leer desde el atril.
+   Va después de la regla base de #cancion-render para poder sobrescribirla. */
+@media screen and (min-width: 900px) {
+  #cancion-render {
+    font-size: 1.2rem;
+  }
+} 
 
 #buscador {
   width: 100%;
   max-width: 100%;
   padding: 0.7rem 1rem;
   font-size: 1.1rem;
-  border: 1px solid #0d0950;
+  border: 1px solid var(--azul-acorde);
   border-radius: 0.4em;
-  box-sizing: border-box;
 }
 
 #contador {
@@ -208,4 +306,3 @@ ul li a {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
-

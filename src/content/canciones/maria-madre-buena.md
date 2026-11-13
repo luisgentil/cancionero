@@ -7,9 +7,7 @@ youtube: "https://youtu.be/EWXfYaUCj0I?si=FcZbCJZkGVNegkNn"
 fecha: 2026-01-30
 descripcion: "'María, la madre buena' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "tiempo ordinario"
-  - "adviento"
-  - "infantil"
+  - "María"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/.html"
 ---
 [Am]Tantas cosas en la vida

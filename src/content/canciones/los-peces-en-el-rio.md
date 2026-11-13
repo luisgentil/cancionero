@@ -7,8 +7,8 @@ youtube: "https://youtu.be/L6_nZapQyps"
 fecha: 2019-12-12
 descripcion: "'Los peces en el río' letra y acordes, letras de villancios y canciones de misa."
 palabrasClave:
-  - "navidad" 
-  - "infantil"
+  - "Navidad" 
+  - "Infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/villancico-peces-en-el-rio.html"
 ---
 [Am]Pero mira cómo beben los pece[E]s en el río, 

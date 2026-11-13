@@ -5,24 +5,14 @@ seccion:
   - "Entrada"
   - "María"
 pdf: "https://cantoliturgicoblog.files.wordpress.com/2016/10/preparad-los-caminos-carmelo-erdozain.pdf"
-historia: "Este canto pertenece al disco \"Preparad los caminos\", editado en 1979 por Ediciones Paulinas, siendo el autor Carmelo Erdorzain.En el siguiente enlace puedes acceder a las partitura de 'La virgen sueña caminos' y el resto de las canciones originales de ese disco, en pdf."
+historia: "Este canto pertenece al disco \"Preparad los caminos\", editado en 1979 por Ediciones Paulinas, siendo el autor Carmelo Erdorzain. En el siguiente enlace puedes acceder a las partitura de 'La Virgen sueña caminos' y el resto de las canciones originales de ese disco, en pdf."
 fecha: 2019-05-14
 descripcion: "'La virgen sueña caminos' letra y acordes, letras de canciones de misa."
 palabrasClave:
   - "Album 'Preparad los caminos'(1979)"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "tiempo ordinario"
-  - "adviento"
-  - "navidad"
-  - "cuaresma"
-  - "semana Santa"
-  - "pascua"
-  - "cancionero"
-  - "católico"
-  - "infantil"
+  - "Adviento"
+  - "Navidad"
+  - "Infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/la-virgen-suena-caminos.html"
 ---
 [E]La Virgen s[A]ueña cami[E]nos,

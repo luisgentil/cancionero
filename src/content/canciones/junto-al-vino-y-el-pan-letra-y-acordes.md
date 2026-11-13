@@ -9,10 +9,8 @@ historia: "Esta canción resulta muy alegre y animada, aunque no sea la más fá
 fecha: 2019-10-15
 descripcion: "'Junto al vino al pan' letra y acordes, ✨ buen canto de ofertorio para la misa, muy alegre, adecuada para misa de niños. Con acordes para guitarra, o versión sólo letra."
 palabrasClave:
-  - "tiempo ordinario"
-  - "pascua"
-  - "canciones de misa salesiana"
-  - "infantil"
+  - "Salesiano"
+  - "Infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/junto-al-vino-y-el-pan-letra-y-acordes.html"
 ---
 [D]JUNTO AL VINO AL PAN
@@ -26,10 +24,8 @@ urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/junto
 
  [Bb]1.El agua [C]de la risa de[D] los niños,
  el vi[Bb]ento de las m[C]adres al cant[D]ar
- SIb  DO   FA        LA4
- hoy para Ti serán, oh, Señor.
+ [Bb]hoy pa[C]ra Ti[F] serán, oh, [A4]Señor.
 
  [Bb]2. El fueg[C]o de la fuerz[D]a de los hombres,
  la ti[Bb]erra de su dé[C]bil corazón [D]
- SIb  DO   FA        LA4
- hoy para Ti serán, oh, Señor.
+ [Bb]hoy pa[C]ra Ti se[F]rán, oh, S[A4]eñor.

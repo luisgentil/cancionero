@@ -10,9 +10,9 @@ fecha: 2019-11-22
 descripcion: "'Jesús es Señor' letra y acordes, canto de misa. Canción del grupo Kairoi, puedes cartarla como canto de entrada en la fiesta de Cristo Rey, antífona del salmo o canto de aleluya."
 palabrasClave:
   - "Disco 'Jesús es el Señor'"
-  - "tiempo ordinario"
-  - "cristo rey"
-  - "pascua"
+  - "Cristo Rey"
+  - "Pascua"
+  - "Jesús"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/jesus-es-senor-kairoi.html"
 ---
 [C]Jesús es, [F]Jesús es S[C]eño[G7]r,

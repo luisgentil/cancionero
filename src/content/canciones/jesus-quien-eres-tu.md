@@ -6,12 +6,12 @@ seccion:
 fecha: 2023-03-17
 descripcion: "'Jesús, ¿quién eres tú?' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "brotes de olivo"
-  - "jesús"
-  - "oración"
+  - "Brotes de Olivo"
+  - "Jesús"
+  - "Oración"
   - "Disco 'Joven 1'"
-  - "pascua"
-  - "infantil"
+  - "Pascua"
+  - "Jóvenes"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/jesus-quien-eres-tu.html"
 ---
 Jes[C]ús, ¿quién eres [A]Tú?, tan pobre al nac[F]er, que mueres en c[G]ruz.

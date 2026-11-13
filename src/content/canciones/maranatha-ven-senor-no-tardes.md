@@ -7,8 +7,7 @@ youtube: "https://youtu.be/_XCJYfOZN8w?si=pQ9gg_RjDHPNrdbn"
 fecha: 2024-12-06
 descripcion: "'Maranathá Ven Señor No Tardes' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "tiempo ordinario"
-  - "adviento"
+  - "Adviento"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/.html"
 ---
 [C]Se escu[Em7]cha una[Am] voz que [Dm7]clama en [F]el de[G]sierto

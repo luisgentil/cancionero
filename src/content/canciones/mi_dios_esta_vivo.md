@@ -7,10 +7,11 @@ seccion:
 fecha: 2019-04-26
 descripcion: "'Mi Dios está vivo' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "perdón"
-  - "tiempo ordinario"
-  - "pascua"
-  - "infantil"
+  - "Perdón"
+  - "Pascua"
+  - "Infantil"
+  - "Bautismo"
+  - "Agua"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/mi_dios_esta_vivo.html"
 ---
 [G]Mi Dios está vivo, Él[E] no está muerto.

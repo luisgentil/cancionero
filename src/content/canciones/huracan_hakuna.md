@@ -7,26 +7,11 @@ youtube: "https://youtu.be/P2Kf8RsxuiA?si=6Fe7OZqKXVTCK-BN"
 fecha: 2026-06-04
 descripcion: "'Huracán' letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "canciones de misa"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "tiempo ordinario"
-  - "pascua"
-  - "cancionero"
-  - "católico"
-  - "juveil"
+  - "Jóvenes"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/huracan_hakuna.html"
 ---
-G                      RE
-Me he hecho tantas preguntas
+
+[G]Me he hecho tantas pre[D]guntas
 [E]Intentando ent[C]ender
 [G]Me he lanzado a buscar[D]te
 [E]Sin saberte v[C]er

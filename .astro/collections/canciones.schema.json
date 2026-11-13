@@ -43,6 +43,9 @@
       "type": "string",
       "format": "uri"
     },
+    "numeroPapel": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

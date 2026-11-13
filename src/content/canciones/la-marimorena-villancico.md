@@ -3,27 +3,15 @@ titulo: "La marimorena"
 autor: "Villancico"
 seccion:
   - "Villancicos"
+  - "Navidad"
 youtube: "https://youtu.be/6fDFYHgbpAw"
 descripcion: "'La marimorena' villancico, letra y acordes, letras de canciones de misa."
 palabrasClave:
-  - "letra"
-  - "acordes"
-  - "lyrics"
-  - "tabs"
-  - "chords"
-  - "música"
-  - "guitarra"
-  - "música religiosa"
-  - "música católica"
-  - "liturgia"
-  - "navidad"
-  - "zambomba"
-  - "cancionero"
-  - "católico"
-  - "infantil"
+  - "Navidad"
+  - "Infantil"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/la-marimorena-villancico.html"
 ---
-{comment: RE - MI7 - LA}
+Intro [D] _  [E7] _ [A]
  [A]ANDE, ANDE, ANDE, LA MARIMOR[E]ENA
  ANDE, ANDE, ANDE [D]
  QUE ES LA NOCHEB[E7]UENA ([A]BIS)

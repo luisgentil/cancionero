@@ -6,11 +6,12 @@ seccion:
 fecha: 2019-03-28
 descripcion: "'In te confido' letra y acordes, lyrics tabs chords"
 palabrasClave:
-  - "salmo"
-  - "oración"
-  - "cuaresma"
-  - "semana Santa"
-  - "infantil"
+  - "Salmo"
+  - "Oración"
+  - "Cuaresma"
+  - "Semana Santa"
+  - "Taizé"
+  - "Alabanza"
 urlAnterior: "https://pilgrim.neocities.org/cancionero/resources/canciones/in_te_confido.html"
 ---
 (Cejilla en el quinto traste)
